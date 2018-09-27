@@ -27,7 +27,7 @@ Each assignment should have a folder with your name and your solution in it as w
 ## How to get started ##
 
 1. fork the project
-2. git clone ${repo url for your new forked project}
+2. git clone `${repo url for your new forked project}`
 3. do the solution
 4. commit and push
 5. create pull request
