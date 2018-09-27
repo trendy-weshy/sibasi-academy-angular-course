@@ -8,21 +8,21 @@ Since you have learnt about scaffolding angular project, using `@angular/cli` to
 
 In this exercise, you are required to generate an angular project with a prefix of your initials e.g. `jww`
 so that your naming system will be:
-	1. if it is a component `jww-login-component`
-	2. if it is a module `jww-login-module`
+
+1. if it is a component `jww-login-component`
+2. if it is a module `jww-login-module`
 
 The project will have one app module which has two components, that is:
 	
 ```
-/
-	- ./angular-project
-		- ./src
-			- ./app
-				- app.module.ts
-					./login
-						- login.component.ts
+- ./angular-project
+	- ./src
+		- ./app
+			- app.module.ts
+				./login
+					- login.component.ts
 ```
-this sample has ignored .html, .css/.scss/.sass/.less, .spec.ts files generate
+this sample has ignored `.html, .css/.scss/.sass/.less, .spec.ts` files generate
 
 The sample folder structure represents the following:
 

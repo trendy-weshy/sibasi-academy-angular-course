@@ -32,5 +32,5 @@ Each assignment should have a folder with your name and your solution in it as w
 4. commit and push
 5. create pull request
 
-	- Have the title as {name of exercise or project}
+	- Have the title as `{name of exercise or project}`
 	- Have the description stating what it is about
