@@ -6,7 +6,7 @@ This is to practise on:
 2. angular modules, what they are and how they are used in angular;
 3. angular services, what they are and how they function;
 
-## Instruction ##
+## Guidance ##
 
 This exercise may require you to visit the main angular documentation for better insight. You can look at the following:
 
