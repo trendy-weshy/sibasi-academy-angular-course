@@ -1,4 +1,4 @@
-# Exercise 1: Understanding of components, services and modules
+# Exercise 2: Understanding of components, services and modules
 
 This is to practise on:
 
