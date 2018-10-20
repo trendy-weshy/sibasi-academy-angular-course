@@ -1,0 +1,10 @@
+<div id="resetdiv">
+    <p *ngIf="getClicks() != 0">
+    You have clicked the button {{ getClicks()}} times!
+    </p>
+    <p *ngIf="getClicks() == 0">
+      Please click the button below
+    </p>
+    <button (click) = "addClicks()" >click Me!</button>
+   <button (click) = "resetClick()" >Reset Clicks</button>
+  </div>
