@@ -1,4 +1,4 @@
-resetdiv{
+#resetdiv{
     width: 200px;
 	min-height: 50px;
 	display: block;
@@ -6,4 +6,8 @@ resetdiv{
 	box-shadow: 0 0 2px 3px rgba(0,0,0,.1);
 	margin: 0;
 	padding: 20px;
+	margin-left: 500px;
+}
+#textmsg{
+	color:red
 }
