@@ -34,8 +34,8 @@ export class LoginComponent implements OnInit {
     this.loading = false;
     this.success = false;
     this.homepage = false;
-    this.myForm.value.username = '';
-    this.myForm.value.password = '';
+    this.myForm.reset();
+ 
   }
    
   get username(){
