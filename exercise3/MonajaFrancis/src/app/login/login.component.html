@@ -1,0 +1,47 @@
+
+<div class="container" *ngIf="!success">
+  <div class="row" id="row-form">
+    <div class="col-6">
+        <h5>Please Login</h5>
+       <form [formGroup]="myForm" class="form"   (ngSubmit) = "submitHandler()">
+          <hr>
+         <div class="form-group">
+           <label for="username">Username</label>
+           <input class="form-control" id="username" formControlName="username" placeholder="username">
+           <div *ngIf="username.invalid && username.touched" class="alert alert-danger" role="alert">
+              Username is required!
+          </div>
+         </div>
+         <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" formControlName="password" placeholder="password">
+            <div *ngIf="password.invalid && password.touched" class="alert alert-danger" role="alert">
+              Password is required!  
+            </div>            
+          </div>
+         
+         <button type="submit" class="btn btn-success" [disabled] = "false" >Log in</button>
+       </form>
+       <hr>
+       <div>
+          <p>Username: monaja</p>
+          <p>Password: Mon1234</p>
+        </div>
+    </div>
+  </div>
+</div>
+<div *ngIf="success" class="container">
+    <div class="row" id="row-form">
+      <div class="col-12">
+         <h4>Welcome to the Angular Portal.</h4>
+      </div>       
+    </div>
+    <div class="row" id="row-form">
+        <div class="col-6">
+           <h5>I am {{userName}}!</h5>
+        </div>
+        <div class="col-6">
+           <button class="btn btn-primary" (click)="onLogOut()">Log Out</button>
+        </div>         
+    </div>
+</div>
