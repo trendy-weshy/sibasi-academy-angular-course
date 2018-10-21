@@ -8,6 +8,11 @@ import {FormGroup,FormBuilder,Validators} from "@angular/forms"
 })
 export class LoginComponent implements OnInit {
    myForm: FormGroup;
+   loading = false;
+   success = false;
+   homepage = false;
+   userName = 'monaja';
+   passWord = 'Mon123';
   constructor(private fb: FormBuilder) { 
 
   }
@@ -15,8 +20,22 @@ export class LoginComponent implements OnInit {
   ngOnInit() {
     this.myForm =  this.fb.group({
       username:['',[Validators.required]],
-      password:['',[Validators.required,Validators.pattern('^[a-zA-Z]\w{3,14}$')]]
+      password:['',[Validators.required,]]
     })
+  }
+  async submitHandler(){
+    if(this.myForm.value.username == this.userName && this.myForm.value.password == this.passWord){
+      this.loading = true;
+      this.success = true;
+      this.homepage = true;
+     } 
+  }
+  async onLogOut(){
+    this.loading = false;
+    this.success = false;
+    this.homepage = false;
+    this.myForm.value.username = '';
+    this.myForm.value.password = '';
   }
    
   get username(){
